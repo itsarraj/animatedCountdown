@@ -3,11 +3,13 @@ const counter = document.querySelector('.counter');
 const finalMessage = document.querySelector('.final');
 const replay = document.querySelector('#replay');
 
+runAnimation()
+
 function resetDOM() {
     counter.classList.remove('hide')
     finalMessage.classList.remove('show')
 
-    nums.forEach(   (num) => {
+    nums.forEach((num) => {
         num.classList.value = ''
     })
 
@@ -16,7 +18,7 @@ function resetDOM() {
 
 function runAnimation() {
     nums.forEach((num , idx) => {
-        const nextToLast = nums.length - 1;
+        const nextToLast = nums.length - 1
 
         num.addEventListener('animationend' , (e) =>{
             if ( e.animationName === 'goIn' && idx !== nextToLast ) {

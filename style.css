@@ -28,7 +28,6 @@ h4 {
     animation: hide 0.2s ease-out;
 }
 
-
 @keyframes hide {
     0%{
      transform: translate(-50% , -50% ) scale(1);
@@ -48,8 +47,8 @@ h4 {
 }
 
 .final.show {
-    transform: translate(-50% , -50) scale(1);
-    animation: show 0.2s ease;
+    transform: translate(-50% , -50%) scale(1);
+    animation: show 0.2s ease-out;
 }
 
 
